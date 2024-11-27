@@ -1,0 +1,9 @@
+{% for cliente in clientes %}
+        <div class="ficha" style="width: 18rem;">
+            <h3>{{ cliente.nombre }}</h3>
+            <p><strong>Nrc:</strong> {{ cliente.nrc }}</p>
+            <p><strong>Correo:</strong> {{ cliente.email }}</p>
+            <!-- <p><strong>telefono:</strong> {{ cliente.telefono }}</p> -->
+            <p><strong>direccion:</strong> {{cliente.direccion}} </p>
+        </div>
+    {% endfor %}
